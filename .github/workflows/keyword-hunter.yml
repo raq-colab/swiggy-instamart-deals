@@ -4,8 +4,8 @@ concurrency:
   cancel-in-progress: false
 on:
    schedule:
-      - cron: '*/10 3-18 * * *'
-      - cron: '0 19 * * *'
+      - cron: '0-59/10 0-18 * * *'
+      - cron: '1 19 * * *'
    workflow_dispatch:
     inputs:
       skip_sync:

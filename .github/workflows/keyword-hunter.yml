@@ -1,5 +1,7 @@
 name: Swiggy Instamart Keyword Deal Hunter
-
+concurrency:
+  group: instamart-deal-hunter
+  cancel-in-progress: false
 on:
   schedule:
     # 30-Minute Interval Deal Hunter (09:01 AM to 12:01 AM midnight IST):

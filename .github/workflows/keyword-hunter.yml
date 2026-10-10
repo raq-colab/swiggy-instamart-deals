@@ -3,11 +3,10 @@ concurrency:
   group: instamart-deal-hunter
   cancel-in-progress: false
 on:
- schedule:
-  - cron: '*/10 3-18 * * *'
-  - cron: '0 19 * * *'
-  
-  workflow_dispatch:
+   schedule:
+      - cron: '*/10 3-18 * * *'
+      - cron: '0 19 * * *'
+   workflow_dispatch:
     inputs:
       skip_sync:
         description: 'Skip top-of-hour wait sync (run immediately)'
